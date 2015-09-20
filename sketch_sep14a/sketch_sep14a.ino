@@ -16,8 +16,10 @@ void setup() {
 }
 
 void loop() {
+
   
-  Serial.println(analogRead(inputPin));
+  Serial.print(analogRead(inputPin));
+  Serial.print(" ");
 
   if (Serial.available() == 5) {
             //Read buffer
